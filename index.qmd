@@ -1,0 +1,283 @@
+---
+title: "Operating Treand for Excel"
+---
+
+# Welcome
+
+## Before You Begin
+
+Welcome to the **Operational Trend for Excel™** product from the Ctrl Designer LLC (**CDL**) company. Whether you are brand new to CDL products or are an experienced user getting your first taste of Operational Trend for Excel™, we want your experience to be a good one.
+
+Please do the following:
+
+• Follow the directions in "**Installation Procedure**" to install your new software; and
+
+• Once your software is installed, turn to the "**Quick Tour**" chapter to learn more about your brand-new software.
+
+At any time you can review the PowerPoint or the Video of this product.
+
+## Microsoft Excel Version
+
+The **Operational Trend for Excel™** version 100a is developed for Microsoft Excel 2016 or newer versions only for Windows.
+
+## Send Us Your Feedback
+
+We welcome your feedback. Let us know how **Operational Trend for Excel™** has helped you gain expertise in creating custom solutions. You can reach us in any of the following ways.
+
+-   Web site: www.CtrlDesigner.com
+-   E-Mail: info\@CtrlDesigner.com
+
+**Note:** that we regularly receive suggestions and comments regarding CTRL Designer LLC (CDL) products and are unable to respond directly to each one. However, please be assured that your recommendations, ideas, and remarks will be recorded and will help shape future versions of our products. Please make sure that you send us a copy of the screen with the problem. Press the ALT and PRINT SCREEN keys simultaneously to capture the current window onto the clipboard, then paste the captured screen in Microsoft® Word or Microsoft® Excel (Choose Paste from the Edit Menu).
+
+# Overview
+
+The **Operational Trend for Excel**™ (**OT**) has been designed to enable the implementation of **State-Based Control** (**SBC**) as part of the process automation project.
+
+## Purpose
+
+The purpose of this document is to provide the user with
+
+-   Step by step instructions to implement the **Operational Trend for Excel**™
+
+-   Demonstrate the work process with four examples
+
+-   Provide a guideline to convert **Operational Trend for Excel**™ to **State-Based Control**
+
+The tool can be used to
+
+-   Define Unit Modules **UM** interaction in a Plant Module **PM**
+
+-   Define Equipment Module **EM** and Control Modules **CM** interaction in a Unit Module **UM**
+
+## In this Document
+
+The following chapters and appendices are provided in this document
+
+-   Installation Procedure
+
+-   Plant Module with Tank, Reactor, and Distillation
+
+-   Unit Module Tank Review
+
+-   Step by Step to utilize OT
+
+-   Advanced **Operational Trend for Excel**™
+
+-   Convert **OT** to **SBC**
+
+-   Appendix
+
+    -   UmV340
+
+    -   UmR350
+
+    -   UmT360
+
+    -   PmVRT
+
+    -   Pm3RX3DIST
+
+## Version Control
+
+Please add information for the new version.
+
+1-   Save the file with the new date YYYY-MM-DD
+
+2-   Add information below
+
+| N   | File                                | Who | Date       |
+|-----|-------------------------------------|-----|------------|
+| 1   | Operational-Trend-step-by-step-v01a | YN  | 11/21/2023 |
+| 2   |                                     |     |            |
+| 3   |                                     |     |            |
+| 4   |                                     |     |            |
+
+## Copyright
+
+The **Operational Trend for Excel**™ will be referred to as **Product**. By using this **product**, you are agreeing to be bound by the terms and conditions of this agreement. Do not use this **product** until You have read and agreed to the following terms and conditions. The use of the **Product** automatically implies the acceptance of the following terms and conditions.
+
+**LICENSE**. CTRL Designer LLC (CDL) grants you the right to use the **product** only to internally evaluate and test CDL products, including any incorporated and/or accompanying demo software, components, and documentation (where the documentation is an essential part of this license) provided for internal evaluation and testing purposes. The Demo Product shall not be, in any case, directly or indirectly assembled as a part of any production of reports as it is solely developed to serve demonstration purposes has no direct function, and is not a finished product.
+
+**OWNERSHIP AND COPYRIGHT.** Title to the Demo Product, demo software, related documentation, and all copies thereof remain with CDL and its licensors. You may not remove the copyright notices from the Demo Product. You may make one (1) copy of the software for backup or archival purposes provided that You reproduce and apply to such copy any copyright or other proprietary rights notices included on or embedded in the demonstration software. You agree to prevent any unauthorized copying of the Demo Product, demonstration software, and related documentation.
+
+**RESTRICTIONS**. You may not sell, assign, sublicense, lease, rent, or otherwise distribute the Demo Product for commercial purposes (unless you are an authorized CDL distributor provided that all the other clauses of this DEMO PRODUCT LICENSE AGREEMENT shall apply entirely), in whole or in part, or use Demo Product in a production system. Except as provided in this Agreement or the Demo Product's documentation, you may not reproduce the demonstration software or related documentation, or modify, reverse engineer, decompile, or disassemble the demonstration software, in whole or in part.
+
+**NO WARRANTY**. The Demo Product is provided "as is" and "with all faults" without warranty of any kind expressed or implied. CDL and its licensors expressly disclaim all warranties, expressed, implied, or otherwise, including without limitation, warranty of merchantability, fitness for a particular purpose, and non-infringement of intellectual property rights. CDL does not warrant that the use in whole or in part of the Demo Product will be interrupted or error-free, will meet your requirements, or will operate with the combination of hardware and software selected by You.
+
+You are responsible for determining whether the Demo Product will be suitable for your intended use or application or will achieve your intended results.
+
+**LIMITATION OF LIABILITIES**. In no event, CDL or its licensors be liable to You or any third party for any indirect, special, consequential, incidental, punitive damages or other damages (including but not limited to, the cost of labor, re-qualification, delay, loss of profits, loss of revenues, loss of data, costs of procurement of substitute goods or services or the like) whether based on contract, tort, or any other legal theory, relating to or in connection with the Demo Product, the documentation or this Agreement, even if CDL has been advised of the possibility of such damages.
+
+# Installation Procedure
+
+Thank you for purchasing CDL for the Excel package from CDL. You have downloaded the **CDL-Tool-for-Excel** zip file. Please do the following:
+
+1.  Decide on the location where you would like to install the **CDL-Tool-for-Excel**
+
+    -   Please select a short path like the document folder
+
+    -   Copy the ZIP file there
+
+    -   Unzip it
+
+2.  The following folders are extracted
+
+    -   **Project**: Contain the project folders (a sample project and a project folder template)
+
+        -   Note: You can have multiple projects in this folder
+
+    -   **Tools**: Contains all documentation and tools
+
+## Project Folder Content
+
+The Project folder contains the following:
+
+-   **CDL-SmName-Project-YYYY**: Project Template folder
+
+    -   **CDL** == Project 3 letter acronym
+
+    -   **SmName**: Site Acronym name like VRT
+
+    -   **Project**: Additional information if needed
+
+    -   **YYYY**: The Year of Project started
+
+-   **CDL-VRT-2023**: Example of how to use the tools
+
+The **CDL-VRT-2023** project contains the following folders:
+
+-   P1-IPA-Industrial-Plant-Assessment
+
+-   P2-LofA-Level-Of-Automation
+
+-   P3-OT-Operational-Trends
+
+-   P4-SOP-Standard-Operating-Procedure
+
+-   P5-URS-User-Requirement-Specification
+
+-   P6-FRS-Functional-Requirement-Specification
+
+-   P7-ACM-Automatic-Code-Maker
+
+## Tools Folder Content
+
+The Tools folder contains the following:
+
+-   A-Documentation
+
+-   B-Templates
+
+-   C-CM-CCM-Libraries
+
+-   D-Engines
+
+-   E-Issues
+
+## Register the Program
+
+The program is installed as a valid product for 45 days. To extend its registration beyond 45 days please do the following:
+
+### Option 1: Received the registration files in email.
+
+Please do the following steps:
+
+1.  Select **Tools\\D-Engines\\Registration** folder
+
+2.  Save the Registration file in the email to this folder
+
+3.  Open the **Tools\\D-Engines** folder
+
+4.  Run **CDL-P0-Check-Excel.xlsm** file
+
+5.  Select {**ToDo**} sheet
+
+6.  Click the \[**1\] Check Macro** button
+
+![](artifacts/02_Overview/New%20image005.png){width="400"}
+
+If you get an error from Excel, please read the instructions provided in the ReadMe worksheet.
+
+Repeat steps 5 and 6.
+
+### Option 2: Request registration files by email
+
+Please do the following steps:
+
+1.  Select {**ToDo**} sheet
+
+2.  Click the \[**1\] Check Macro** button
+
+![](artifacts/02_Overview/New%20image005.png){width="400"}
+
+If you get an error from Excel, please read the instructions provided in the ReadMe worksheet.
+
+Repeat steps 5 and 6.
+
+3.  Click OK
+4.  Follow the instructions and send an email to CTRL Designer LLC (Sales\@CtrlDesigner.com)
+5.  Receive the license file
+6.  Save the new **License file** in your email to the **Tools\\D-Engine\\Registration** folder
+7.  make sure you remove the demo registration file.
+
+## Register the Product with the Registration File
+
+Please do the following steps:
+
+1.  Select the {**Register**} Sheet
+
+2.  ![](artifacts/02_Overview/New%20image006.png)
+
+3.  Click the **\[3\] Read License File** button
+
+4.  Review the license information, there are three types:
+
+    -   Demo (Limited time)
+
+    -   Subscription (Yearly)
+
+    -   Product (No limits)
+
+5.  Make sure you **SAVE** the program file (to keep the registration valid)
+
+## Register the Product with the Registration Key
+
+1.  From the mail, you received from us, open the attached file and copy the **Registration Key**
+
+    -   Make sure you copy all the **Registration Key**, click the mouse in the line above the registration key, and drag it to the line below.
+
+2.  Select the {**Register**} Sheet
+
+3.  Click the **\[1\] Enter the Registration Code** button
+
+4.  Paste the copied **Registration Key** in the white box
+
+    ![](artifacts/02_Overview/New%20image009.png){width="400"}
+
+5.  Click the **OK** button
+
+6.  Click the **\[2\] Check the Registration** button
+
+7.  Make sure you **SAVE** the program file (to keep the registration valid)
+
+## Setup the Program Shortcuts
+
+The following steps will enable all the CDL-Tool-For-Excel functionalities.
+
+1.  Open **Tools\\D-Engines** folder
+2.  Run **CDL-P1-Engine-Paths-Builder-v01a.xlsm** file
+3.  Select {**ToDo**} sheet
+4.  Click the **\[1\] Select Folder** button
+    -   Select the project folder (or navigate to **CDL-Products\\Projects\\CDL-VRT-2023** folder
+    -   Click the **OK** button
+5.  Click the **\[2\] List Files** button
+    -   Add character X in cells A31 to A37
+6.  Click the **\[3\] Delete Shortcuts** button
+    -   Click the **OK** button
+7.  Click the **\[4\] Select Engine Folder** button
+    -   Select the **Tools\\D-Engine** folder (or navigate to **CDL-Products\\Tools\\D-Engine** folder
+    -   Click the **OK** button
+8.  Click the **\[5\] Build Shortcuts** button
+    -   Click the **OK** button
+    -   Click the **Close** button on the CDL Progress bar
+9.  Save and close the program

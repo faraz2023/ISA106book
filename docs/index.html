@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ISA106 book - Operating Treand for Excel</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">ISA106 book</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <ul class="collapse">
+  <li><a href="#before-you-begin" id="toc-before-you-begin" class="nav-link" data-scroll-target="#before-you-begin">Before You Begin</a></li>
+  <li><a href="#microsoft-excel-version" id="toc-microsoft-excel-version" class="nav-link" data-scroll-target="#microsoft-excel-version">Microsoft Excel Version</a></li>
+  <li><a href="#send-us-your-feedback" id="toc-send-us-your-feedback" class="nav-link" data-scroll-target="#send-us-your-feedback">Send Us Your Feedback</a></li>
+  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#in-this-document" id="toc-in-this-document" class="nav-link" data-scroll-target="#in-this-document">In this Document</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a></li>
+  <li><a href="#copyright" id="toc-copyright" class="nav-link" data-scroll-target="#copyright">Copyright</a></li>
+  </ul></li>
+  <li><a href="#installation-procedure" id="toc-installation-procedure" class="nav-link" data-scroll-target="#installation-procedure">Installation Procedure</a>
+  <ul class="collapse">
+  <li><a href="#project-folder-content" id="toc-project-folder-content" class="nav-link" data-scroll-target="#project-folder-content">Project Folder Content</a></li>
+  <li><a href="#tools-folder-content" id="toc-tools-folder-content" class="nav-link" data-scroll-target="#tools-folder-content">Tools Folder Content</a></li>
+  <li><a href="#register-the-program" id="toc-register-the-program" class="nav-link" data-scroll-target="#register-the-program">Register the Program</a>
+  <ul class="collapse">
+  <li><a href="#option-1-received-the-registration-files-in-email." id="toc-option-1-received-the-registration-files-in-email." class="nav-link" data-scroll-target="#option-1-received-the-registration-files-in-email.">Option 1: Received the registration files in email.</a></li>
+  <li><a href="#option-2-request-registration-files-by-email" id="toc-option-2-request-registration-files-by-email" class="nav-link" data-scroll-target="#option-2-request-registration-files-by-email">Option 2: Request registration files by email</a></li>
+  </ul></li>
+  <li><a href="#register-the-product-with-the-registration-file" id="toc-register-the-product-with-the-registration-file" class="nav-link" data-scroll-target="#register-the-product-with-the-registration-file">Register the Product with the Registration File</a></li>
+  <li><a href="#register-the-product-with-the-registration-key" id="toc-register-the-product-with-the-registration-key" class="nav-link" data-scroll-target="#register-the-product-with-the-registration-key">Register the Product with the Registration Key</a></li>
+  <li><a href="#setup-the-program-shortcuts" id="toc-setup-the-program-shortcuts" class="nav-link" data-scroll-target="#setup-the-program-shortcuts">Setup the Program Shortcuts</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Operating Treand for Excel</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="welcome" class="level1">
+<h1>Welcome</h1>
+<section id="before-you-begin" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-begin">Before You Begin</h2>
+<p>Welcome to the <strong>Operational Trend for Excel™</strong> product from the Ctrl Designer LLC (<strong>CDL</strong>) company. Whether you are brand new to CDL products or are an experienced user getting your first taste of Operational Trend for Excel™, we want your experience to be a good one.</p>
+<p>Please do the following:</p>
+<p>• Follow the directions in “<strong>Installation Procedure</strong>” to install your new software; and</p>
+<p>• Once your software is installed, turn to the “<strong>Quick Tour</strong>” chapter to learn more about your brand-new software.</p>
+<p>At any time you can review the PowerPoint or the Video of this product.</p>
+</section>
+<section id="microsoft-excel-version" class="level2">
+<h2 class="anchored" data-anchor-id="microsoft-excel-version">Microsoft Excel Version</h2>
+<p>The <strong>Operational Trend for Excel™</strong> version 100a is developed for Microsoft Excel 2016 or newer versions only for Windows.</p>
+</section>
+<section id="send-us-your-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="send-us-your-feedback">Send Us Your Feedback</h2>
+<p>We welcome your feedback. Let us know how <strong>Operational Trend for Excel™</strong> has helped you gain expertise in creating custom solutions. You can reach us in any of the following ways.</p>
+<ul>
+<li>Web site: www.CtrlDesigner.com</li>
+<li>E-Mail: info@CtrlDesigner.com</li>
+</ul>
+<p><strong>Note:</strong> that we regularly receive suggestions and comments regarding CTRL Designer LLC (CDL) products and are unable to respond directly to each one. However, please be assured that your recommendations, ideas, and remarks will be recorded and will help shape future versions of our products. Please make sure that you send us a copy of the screen with the problem. Press the ALT and PRINT SCREEN keys simultaneously to capture the current window onto the clipboard, then paste the captured screen in Microsoft® Word or Microsoft® Excel (Choose Paste from the Edit Menu).</p>
+</section>
+</section>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>The <strong>Operational Trend for Excel</strong>™ (<strong>OT</strong>) has been designed to enable the implementation of <strong>State-Based Control</strong> (<strong>SBC</strong>) as part of the process automation project.</p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>The purpose of this document is to provide the user with</p>
+<ul>
+<li><p>Step by step instructions to implement the <strong>Operational Trend for Excel</strong>™</p></li>
+<li><p>Demonstrate the work process with four examples</p></li>
+<li><p>Provide a guideline to convert <strong>Operational Trend for Excel</strong>™ to <strong>State-Based Control</strong></p></li>
+</ul>
+<p>The tool can be used to</p>
+<ul>
+<li><p>Define Unit Modules <strong>UM</strong> interaction in a Plant Module <strong>PM</strong></p></li>
+<li><p>Define Equipment Module <strong>EM</strong> and Control Modules <strong>CM</strong> interaction in a Unit Module <strong>UM</strong></p></li>
+</ul>
+</section>
+<section id="in-this-document" class="level2">
+<h2 class="anchored" data-anchor-id="in-this-document">In this Document</h2>
+<p>The following chapters and appendices are provided in this document</p>
+<ul>
+<li><p>Installation Procedure</p></li>
+<li><p>Plant Module with Tank, Reactor, and Distillation</p></li>
+<li><p>Unit Module Tank Review</p></li>
+<li><p>Step by Step to utilize OT</p></li>
+<li><p>Advanced <strong>Operational Trend for Excel</strong>™</p></li>
+<li><p>Convert <strong>OT</strong> to <strong>SBC</strong></p></li>
+<li><p>Appendix</p>
+<ul>
+<li><p>UmV340</p></li>
+<li><p>UmR350</p></li>
+<li><p>UmT360</p></li>
+<li><p>PmVRT</p></li>
+<li><p>Pm3RX3DIST</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="version-control" class="level2">
+<h2 class="anchored" data-anchor-id="version-control">Version Control</h2>
+<p>Please add information for the new version.</p>
+<p>1-&nbsp;&nbsp; Save the file with the new date YYYY-MM-DD</p>
+<p>2-&nbsp;&nbsp; Add information below</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>N</th>
+<th>File</th>
+<th>Who</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Operational-Trend-step-by-step-v01a</td>
+<td>YN</td>
+<td>11/21/2023</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="copyright" class="level2">
+<h2 class="anchored" data-anchor-id="copyright">Copyright</h2>
+<p>The <strong>Operational Trend for Excel</strong>™ will be referred to as <strong>Product</strong>. By using this <strong>product</strong>, you are agreeing to be bound by the terms and conditions of this agreement. Do not use this <strong>product</strong> until You have read and agreed to the following terms and conditions. The use of the <strong>Product</strong> automatically implies the acceptance of the following terms and conditions.</p>
+<p><strong>LICENSE</strong>. CTRL Designer LLC (CDL) grants you the right to use the <strong>product</strong> only to internally evaluate and test CDL products, including any incorporated and/or accompanying demo software, components, and documentation (where the documentation is an essential part of this license) provided for internal evaluation and testing purposes. The Demo Product shall not be, in any case, directly or indirectly assembled as a part of any production of reports as it is solely developed to serve demonstration purposes has no direct function, and is not a finished product.</p>
+<p><strong>OWNERSHIP AND COPYRIGHT.</strong> Title to the Demo Product, demo software, related documentation, and all copies thereof remain with CDL and its licensors. You may not remove the copyright notices from the Demo Product. You may make one (1) copy of the software for backup or archival purposes provided that You reproduce and apply to such copy any copyright or other proprietary rights notices included on or embedded in the demonstration software. You agree to prevent any unauthorized copying of the Demo Product, demonstration software, and related documentation.</p>
+<p><strong>RESTRICTIONS</strong>. You may not sell, assign, sublicense, lease, rent, or otherwise distribute the Demo Product for commercial purposes (unless you are an authorized CDL distributor provided that all the other clauses of this DEMO PRODUCT LICENSE AGREEMENT shall apply entirely), in whole or in part, or use Demo Product in a production system. Except as provided in this Agreement or the Demo Product’s documentation, you may not reproduce the demonstration software or related documentation, or modify, reverse engineer, decompile, or disassemble the demonstration software, in whole or in part.</p>
+<p><strong>NO WARRANTY</strong>. The Demo Product is provided “as is” and “with all faults” without warranty of any kind expressed or implied. CDL and its licensors expressly disclaim all warranties, expressed, implied, or otherwise, including without limitation, warranty of merchantability, fitness for a particular purpose, and non-infringement of intellectual property rights. CDL does not warrant that the use in whole or in part of the Demo Product will be interrupted or error-free, will meet your requirements, or will operate with the combination of hardware and software selected by You.</p>
+<p>You are responsible for determining whether the Demo Product will be suitable for your intended use or application or will achieve your intended results.</p>
+<p><strong>LIMITATION OF LIABILITIES</strong>. In no event, CDL or its licensors be liable to You or any third party for any indirect, special, consequential, incidental, punitive damages or other damages (including but not limited to, the cost of labor, re-qualification, delay, loss of profits, loss of revenues, loss of data, costs of procurement of substitute goods or services or the like) whether based on contract, tort, or any other legal theory, relating to or in connection with the Demo Product, the documentation or this Agreement, even if CDL has been advised of the possibility of such damages.</p>
+</section>
+</section>
+<section id="installation-procedure" class="level1">
+<h1>Installation Procedure</h1>
+<p>Thank you for purchasing CDL for the Excel package from CDL. You have downloaded the <strong>CDL-Tool-for-Excel</strong> zip file. Please do the following:</p>
+<ol type="1">
+<li><p>Decide on the location where you would like to install the <strong>CDL-Tool-for-Excel</strong></p>
+<ul>
+<li><p>Please select a short path like the document folder</p></li>
+<li><p>Copy the ZIP file there</p></li>
+<li><p>Unzip it</p></li>
+</ul></li>
+<li><p>The following folders are extracted</p>
+<ul>
+<li><p><strong>Project</strong>: Contain the project folders (a sample project and a project folder template)</p>
+<ul>
+<li>Note: You can have multiple projects in this folder</li>
+</ul></li>
+<li><p><strong>Tools</strong>: Contains all documentation and tools</p></li>
+</ul></li>
+</ol>
+<section id="project-folder-content" class="level2">
+<h2 class="anchored" data-anchor-id="project-folder-content">Project Folder Content</h2>
+<p>The Project folder contains the following:</p>
+<ul>
+<li><p><strong>CDL-SmName-Project-YYYY</strong>: Project Template folder</p>
+<ul>
+<li><p><strong>CDL</strong> == Project 3 letter acronym</p></li>
+<li><p><strong>SmName</strong>: Site Acronym name like VRT</p></li>
+<li><p><strong>Project</strong>: Additional information if needed</p></li>
+<li><p><strong>YYYY</strong>: The Year of Project started</p></li>
+</ul></li>
+<li><p><strong>CDL-VRT-2023</strong>: Example of how to use the tools</p></li>
+</ul>
+<p>The <strong>CDL-VRT-2023</strong> project contains the following folders:</p>
+<ul>
+<li><p>P1-IPA-Industrial-Plant-Assessment</p></li>
+<li><p>P2-LofA-Level-Of-Automation</p></li>
+<li><p>P3-OT-Operational-Trends</p></li>
+<li><p>P4-SOP-Standard-Operating-Procedure</p></li>
+<li><p>P5-URS-User-Requirement-Specification</p></li>
+<li><p>P6-FRS-Functional-Requirement-Specification</p></li>
+<li><p>P7-ACM-Automatic-Code-Maker</p></li>
+</ul>
+</section>
+<section id="tools-folder-content" class="level2">
+<h2 class="anchored" data-anchor-id="tools-folder-content">Tools Folder Content</h2>
+<p>The Tools folder contains the following:</p>
+<ul>
+<li><p>A-Documentation</p></li>
+<li><p>B-Templates</p></li>
+<li><p>C-CM-CCM-Libraries</p></li>
+<li><p>D-Engines</p></li>
+<li><p>E-Issues</p></li>
+</ul>
+</section>
+<section id="register-the-program" class="level2">
+<h2 class="anchored" data-anchor-id="register-the-program">Register the Program</h2>
+<p>The program is installed as a valid product for 45 days. To extend its registration beyond 45 days please do the following:</p>
+<section id="option-1-received-the-registration-files-in-email." class="level3">
+<h3 class="anchored" data-anchor-id="option-1-received-the-registration-files-in-email.">Option 1: Received the registration files in email.</h3>
+<p>Please do the following steps:</p>
+<ol type="1">
+<li><p>Select <strong>Tools\D-Engines\Registration</strong> folder</p></li>
+<li><p>Save the Registration file in the email to this folder</p></li>
+<li><p>Open the <strong>Tools\D-Engines</strong> folder</p></li>
+<li><p>Run <strong>CDL-P0-Check-Excel.xlsm</strong> file</p></li>
+<li><p>Select {<strong>ToDo</strong>} sheet</p></li>
+<li><p>Click the [<strong>1] Check Macro</strong> button</p></li>
+</ol>
+<p><img src="artifacts/02_Overview/New image005.png" class="img-fluid" width="400"></p>
+<p>If you get an error from Excel, please read the instructions provided in the ReadMe worksheet.</p>
+<p>Repeat steps 5 and 6.</p>
+</section>
+<section id="option-2-request-registration-files-by-email" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-request-registration-files-by-email">Option 2: Request registration files by email</h3>
+<p>Please do the following steps:</p>
+<ol type="1">
+<li><p>Select {<strong>ToDo</strong>} sheet</p></li>
+<li><p>Click the [<strong>1] Check Macro</strong> button</p></li>
+</ol>
+<p><img src="artifacts/02_Overview/New image005.png" class="img-fluid" width="400"></p>
+<p>If you get an error from Excel, please read the instructions provided in the ReadMe worksheet.</p>
+<p>Repeat steps 5 and 6.</p>
+<ol start="3" type="1">
+<li>Click OK</li>
+<li>Follow the instructions and send an email to CTRL Designer LLC (Sales@CtrlDesigner.com)</li>
+<li>Receive the license file</li>
+<li>Save the new <strong>License file</strong> in your email to the <strong>Tools\D-Engine\Registration</strong> folder</li>
+<li>make sure you remove the demo registration file.</li>
+</ol>
+</section>
+</section>
+<section id="register-the-product-with-the-registration-file" class="level2">
+<h2 class="anchored" data-anchor-id="register-the-product-with-the-registration-file">Register the Product with the Registration File</h2>
+<p>Please do the following steps:</p>
+<ol type="1">
+<li><p>Select the {<strong>Register</strong>} Sheet</p></li>
+<li><p><img src="artifacts/02_Overview/New image006.png" class="img-fluid"></p></li>
+<li><p>Click the <strong>[3] Read License File</strong> button</p></li>
+<li><p>Review the license information, there are three types:</p>
+<ul>
+<li><p>Demo (Limited time)</p></li>
+<li><p>Subscription (Yearly)</p></li>
+<li><p>Product (No limits)</p></li>
+</ul></li>
+<li><p>Make sure you <strong>SAVE</strong> the program file (to keep the registration valid)</p></li>
+</ol>
+</section>
+<section id="register-the-product-with-the-registration-key" class="level2">
+<h2 class="anchored" data-anchor-id="register-the-product-with-the-registration-key">Register the Product with the Registration Key</h2>
+<ol type="1">
+<li><p>From the mail, you received from us, open the attached file and copy the <strong>Registration Key</strong></p>
+<ul>
+<li>Make sure you copy all the <strong>Registration Key</strong>, click the mouse in the line above the registration key, and drag it to the line below.</li>
+</ul></li>
+<li><p>Select the {<strong>Register</strong>} Sheet</p></li>
+<li><p>Click the <strong>[1] Enter the Registration Code</strong> button</p></li>
+<li><p>Paste the copied <strong>Registration Key</strong> in the white box</p>
+<p><img src="artifacts/02_Overview/New image009.png" class="img-fluid" width="400"></p></li>
+<li><p>Click the <strong>OK</strong> button</p></li>
+<li><p>Click the <strong>[2] Check the Registration</strong> button</p></li>
+<li><p>Make sure you <strong>SAVE</strong> the program file (to keep the registration valid)</p></li>
+</ol>
+</section>
+<section id="setup-the-program-shortcuts" class="level2">
+<h2 class="anchored" data-anchor-id="setup-the-program-shortcuts">Setup the Program Shortcuts</h2>
+<p>The following steps will enable all the CDL-Tool-For-Excel functionalities.</p>
+<ol type="1">
+<li>Open <strong>Tools\D-Engines</strong> folder</li>
+<li>Run <strong>CDL-P1-Engine-Paths-Builder-v01a.xlsm</strong> file</li>
+<li>Select {<strong>ToDo</strong>} sheet</li>
+<li>Click the <strong>[1] Select Folder</strong> button
+<ul>
+<li>Select the project folder (or navigate to <strong>CDL-Products\Projects\CDL-VRT-2023</strong> folder</li>
+<li>Click the <strong>OK</strong> button</li>
+</ul></li>
+<li>Click the <strong>[2] List Files</strong> button
+<ul>
+<li>Add character X in cells A31 to A37</li>
+</ul></li>
+<li>Click the <strong>[3] Delete Shortcuts</strong> button
+<ul>
+<li>Click the <strong>OK</strong> button</li>
+</ul></li>
+<li>Click the <strong>[4] Select Engine Folder</strong> button
+<ul>
+<li>Select the <strong>Tools\D-Engine</strong> folder (or navigate to <strong>CDL-Products\Tools\D-Engine</strong> folder</li>
+<li>Click the <strong>OK</strong> button</li>
+</ul></li>
+<li>Click the <strong>[5] Build Shortcuts</strong> button
+<ul>
+<li>Click the <strong>OK</strong> button</li>
+<li>Click the <strong>Close</strong> button on the CDL Progress bar</li>
+</ul></li>
+<li>Save and close the program</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

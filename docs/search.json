@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Operating Treand for Excel",
+    "section": "",
+    "text": "Welcome to the Operational Trend for Excel™ product from the Ctrl Designer LLC (CDL) company. Whether you are brand new to CDL products or are an experienced user getting your first taste of Operational Trend for Excel™, we want your experience to be a good one.\nPlease do the following:\n• Follow the directions in “Installation Procedure” to install your new software; and\n• Once your software is installed, turn to the “Quick Tour” chapter to learn more about your brand-new software.\nAt any time you can review the PowerPoint or the Video of this product.\n\n\n\nThe Operational Trend for Excel™ version 100a is developed for Microsoft Excel 2016 or newer versions only for Windows.\n\n\n\nWe welcome your feedback. Let us know how Operational Trend for Excel™ has helped you gain expertise in creating custom solutions. You can reach us in any of the following ways.\n\nWeb site: www.CtrlDesigner.com\nE-Mail: info@CtrlDesigner.com\n\nNote: that we regularly receive suggestions and comments regarding CTRL Designer LLC (CDL) products and are unable to respond directly to each one. However, please be assured that your recommendations, ideas, and remarks will be recorded and will help shape future versions of our products. Please make sure that you send us a copy of the screen with the problem. Press the ALT and PRINT SCREEN keys simultaneously to capture the current window onto the clipboard, then paste the captured screen in Microsoft® Word or Microsoft® Excel (Choose Paste from the Edit Menu)."
+  },
+  {
+    "objectID": "index.html#before-you-begin",
+    "href": "index.html#before-you-begin",
+    "title": "Operating Treand for Excel",
+    "section": "",
+    "text": "Welcome to the Operational Trend for Excel™ product from the Ctrl Designer LLC (CDL) company. Whether you are brand new to CDL products or are an experienced user getting your first taste of Operational Trend for Excel™, we want your experience to be a good one.\nPlease do the following:\n• Follow the directions in “Installation Procedure” to install your new software; and\n• Once your software is installed, turn to the “Quick Tour” chapter to learn more about your brand-new software.\nAt any time you can review the PowerPoint or the Video of this product."
+  },
+  {
+    "objectID": "index.html#microsoft-excel-version",
+    "href": "index.html#microsoft-excel-version",
+    "title": "Operating Treand for Excel",
+    "section": "",
+    "text": "The Operational Trend for Excel™ version 100a is developed for Microsoft Excel 2016 or newer versions only for Windows."
+  },
+  {
+    "objectID": "index.html#send-us-your-feedback",
+    "href": "index.html#send-us-your-feedback",
+    "title": "Operating Treand for Excel",
+    "section": "",
+    "text": "We welcome your feedback. Let us know how Operational Trend for Excel™ has helped you gain expertise in creating custom solutions. You can reach us in any of the following ways.\n\nWeb site: www.CtrlDesigner.com\nE-Mail: info@CtrlDesigner.com\n\nNote: that we regularly receive suggestions and comments regarding CTRL Designer LLC (CDL) products and are unable to respond directly to each one. However, please be assured that your recommendations, ideas, and remarks will be recorded and will help shape future versions of our products. Please make sure that you send us a copy of the screen with the problem. Press the ALT and PRINT SCREEN keys simultaneously to capture the current window onto the clipboard, then paste the captured screen in Microsoft® Word or Microsoft® Excel (Choose Paste from the Edit Menu)."
+  },
+  {
+    "objectID": "index.html#purpose",
+    "href": "index.html#purpose",
+    "title": "Operating Treand for Excel",
+    "section": "Purpose",
+    "text": "Purpose\nThe purpose of this document is to provide the user with\n\nStep by step instructions to implement the Operational Trend for Excel™\nDemonstrate the work process with four examples\nProvide a guideline to convert Operational Trend for Excel™ to State-Based Control\n\nThe tool can be used to\n\nDefine Unit Modules UM interaction in a Plant Module PM\nDefine Equipment Module EM and Control Modules CM interaction in a Unit Module UM"
+  },
+  {
+    "objectID": "index.html#in-this-document",
+    "href": "index.html#in-this-document",
+    "title": "Operating Treand for Excel",
+    "section": "In this Document",
+    "text": "In this Document\nThe following chapters and appendices are provided in this document\n\nInstallation Procedure\nPlant Module with Tank, Reactor, and Distillation\nUnit Module Tank Review\nStep by Step to utilize OT\nAdvanced Operational Trend for Excel™\nConvert OT to SBC\nAppendix\n\nUmV340\nUmR350\nUmT360\nPmVRT\nPm3RX3DIST"
+  },
+  {
+    "objectID": "index.html#version-control",
+    "href": "index.html#version-control",
+    "title": "Operating Treand for Excel",
+    "section": "Version Control",
+    "text": "Version Control\nPlease add information for the new version.\n1-   Save the file with the new date YYYY-MM-DD\n2-   Add information below\n\n\n\nN\nFile\nWho\nDate\n\n\n\n\n1\nOperational-Trend-step-by-step-v01a\nYN\n11/21/2023\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n4"
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Operating Treand for Excel",
+    "section": "Copyright",
+    "text": "Copyright\nThe Operational Trend for Excel™ will be referred to as Product. By using this product, you are agreeing to be bound by the terms and conditions of this agreement. Do not use this product until You have read and agreed to the following terms and conditions. The use of the Product automatically implies the acceptance of the following terms and conditions.\nLICENSE. CTRL Designer LLC (CDL) grants you the right to use the product only to internally evaluate and test CDL products, including any incorporated and/or accompanying demo software, components, and documentation (where the documentation is an essential part of this license) provided for internal evaluation and testing purposes. The Demo Product shall not be, in any case, directly or indirectly assembled as a part of any production of reports as it is solely developed to serve demonstration purposes has no direct function, and is not a finished product.\nOWNERSHIP AND COPYRIGHT. Title to the Demo Product, demo software, related documentation, and all copies thereof remain with CDL and its licensors. You may not remove the copyright notices from the Demo Product. You may make one (1) copy of the software for backup or archival purposes provided that You reproduce and apply to such copy any copyright or other proprietary rights notices included on or embedded in the demonstration software. You agree to prevent any unauthorized copying of the Demo Product, demonstration software, and related documentation.\nRESTRICTIONS. You may not sell, assign, sublicense, lease, rent, or otherwise distribute the Demo Product for commercial purposes (unless you are an authorized CDL distributor provided that all the other clauses of this DEMO PRODUCT LICENSE AGREEMENT shall apply entirely), in whole or in part, or use Demo Product in a production system. Except as provided in this Agreement or the Demo Product’s documentation, you may not reproduce the demonstration software or related documentation, or modify, reverse engineer, decompile, or disassemble the demonstration software, in whole or in part.\nNO WARRANTY. The Demo Product is provided “as is” and “with all faults” without warranty of any kind expressed or implied. CDL and its licensors expressly disclaim all warranties, expressed, implied, or otherwise, including without limitation, warranty of merchantability, fitness for a particular purpose, and non-infringement of intellectual property rights. CDL does not warrant that the use in whole or in part of the Demo Product will be interrupted or error-free, will meet your requirements, or will operate with the combination of hardware and software selected by You.\nYou are responsible for determining whether the Demo Product will be suitable for your intended use or application or will achieve your intended results.\nLIMITATION OF LIABILITIES. In no event, CDL or its licensors be liable to You or any third party for any indirect, special, consequential, incidental, punitive damages or other damages (including but not limited to, the cost of labor, re-qualification, delay, loss of profits, loss of revenues, loss of data, costs of procurement of substitute goods or services or the like) whether based on contract, tort, or any other legal theory, relating to or in connection with the Demo Product, the documentation or this Agreement, even if CDL has been advised of the possibility of such damages."
+  },
+  {
+    "objectID": "index.html#project-folder-content",
+    "href": "index.html#project-folder-content",
+    "title": "Operating Treand for Excel",
+    "section": "Project Folder Content",
+    "text": "Project Folder Content\nThe Project folder contains the following:\n\nCDL-SmName-Project-YYYY: Project Template folder\n\nCDL == Project 3 letter acronym\nSmName: Site Acronym name like VRT\nProject: Additional information if needed\nYYYY: The Year of Project started\n\nCDL-VRT-2023: Example of how to use the tools\n\nThe CDL-VRT-2023 project contains the following folders:\n\nP1-IPA-Industrial-Plant-Assessment\nP2-LofA-Level-Of-Automation\nP3-OT-Operational-Trends\nP4-SOP-Standard-Operating-Procedure\nP5-URS-User-Requirement-Specification\nP6-FRS-Functional-Requirement-Specification\nP7-ACM-Automatic-Code-Maker"
+  },
+  {
+    "objectID": "index.html#tools-folder-content",
+    "href": "index.html#tools-folder-content",
+    "title": "Operating Treand for Excel",
+    "section": "Tools Folder Content",
+    "text": "Tools Folder Content\nThe Tools folder contains the following:\n\nA-Documentation\nB-Templates\nC-CM-CCM-Libraries\nD-Engines\nE-Issues"
+  },
+  {
+    "objectID": "index.html#register-the-program",
+    "href": "index.html#register-the-program",
+    "title": "Operating Treand for Excel",
+    "section": "Register the Program",
+    "text": "Register the Program\nThe program is installed as a valid product for 45 days. To extend its registration beyond 45 days please do the following:\n\nOption 1: Received the registration files in email.\nPlease do the following steps:\n\nSelect Tools\\D-Engines\\Registration folder\nSave the Registration file in the email to this folder\nOpen the Tools\\D-Engines folder\nRun CDL-P0-Check-Excel.xlsm file\nSelect {ToDo} sheet\nClick the [1] Check Macro button\n\n\nIf you get an error from Excel, please read the instructions provided in the ReadMe worksheet.\nRepeat steps 5 and 6.\n\n\nOption 2: Request registration files by email\nPlease do the following steps:\n\nSelect {ToDo} sheet\nClick the [1] Check Macro button\n\n\nIf you get an error from Excel, please read the instructions provided in the ReadMe worksheet.\nRepeat steps 5 and 6.\n\nClick OK\nFollow the instructions and send an email to CTRL Designer LLC (Sales@CtrlDesigner.com)\nReceive the license file\nSave the new License file in your email to the Tools\\D-Engine\\Registration folder\nmake sure you remove the demo registration file."
+  },
+  {
+    "objectID": "index.html#register-the-product-with-the-registration-file",
+    "href": "index.html#register-the-product-with-the-registration-file",
+    "title": "Operating Treand for Excel",
+    "section": "Register the Product with the Registration File",
+    "text": "Register the Product with the Registration File\nPlease do the following steps:\n\nSelect the {Register} Sheet\n\nClick the [3] Read License File button\nReview the license information, there are three types:\n\nDemo (Limited time)\nSubscription (Yearly)\nProduct (No limits)\n\nMake sure you SAVE the program file (to keep the registration valid)"
+  },
+  {
+    "objectID": "index.html#register-the-product-with-the-registration-key",
+    "href": "index.html#register-the-product-with-the-registration-key",
+    "title": "Operating Treand for Excel",
+    "section": "Register the Product with the Registration Key",
+    "text": "Register the Product with the Registration Key\n\nFrom the mail, you received from us, open the attached file and copy the Registration Key\n\nMake sure you copy all the Registration Key, click the mouse in the line above the registration key, and drag it to the line below.\n\nSelect the {Register} Sheet\nClick the [1] Enter the Registration Code button\nPaste the copied Registration Key in the white box\n\nClick the OK button\nClick the [2] Check the Registration button\nMake sure you SAVE the program file (to keep the registration valid)"
+  },
+  {
+    "objectID": "index.html#setup-the-program-shortcuts",
+    "href": "index.html#setup-the-program-shortcuts",
+    "title": "Operating Treand for Excel",
+    "section": "Setup the Program Shortcuts",
+    "text": "Setup the Program Shortcuts\nThe following steps will enable all the CDL-Tool-For-Excel functionalities.\n\nOpen Tools\\D-Engines folder\nRun CDL-P1-Engine-Paths-Builder-v01a.xlsm file\nSelect {ToDo} sheet\nClick the [1] Select Folder button\n\nSelect the project folder (or navigate to CDL-Products\\Projects\\CDL-VRT-2023 folder\nClick the OK button\n\nClick the [2] List Files button\n\nAdd character X in cells A31 to A37\n\nClick the [3] Delete Shortcuts button\n\nClick the OK button\n\nClick the [4] Select Engine Folder button\n\nSelect the Tools\\D-Engine folder (or navigate to CDL-Products\\Tools\\D-Engine folder\nClick the OK button\n\nClick the [5] Build Shortcuts button\n\nClick the OK button\nClick the Close button on the CDL Progress bar\n\nSave and close the program"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html#about-us",
+    "href": "about.html#about-us",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
